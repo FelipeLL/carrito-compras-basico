@@ -17,39 +17,92 @@
 
             <article class="row" id="card-dinamica-productos">
 
-              <section class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
-          
-                  <div class="card shadow" >
-                      <img src="https://picsum.photos/id/0/600" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title ">Card title</h5>
-                        <p class="card-text">Precio: </p>
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                          <button class="btn btn-primary" type="button">Go</button>
-                        </div>
-          
-                      </div>
-                    </div>                
-          
-              </section>    
               
               
             </article>
-
+            
             <article>
-
-                
-
+              
+              
+              
             </article>
-    </main>
-    
-    
-    <template>
+          </main>
+          
+          <div class="container">
+            
+            <h4>Carrito de compras</h4>
+            <table class="table text-center" >
+              <thead>
+                <tr >
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items">
+              </tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                  
+                </tr>
+                
+                
+              </tfoot>
+            </table>
+            
+          </div>
+          
+          <template id="template-card-dinamica-productos">
+            
+            <section class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
         
-
-    </template>
+                <div class="card shadow" >
+                    <img src="https://picsum.photos/id/0/600" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title ">Card title</h5>
+                      <p class="card-text">Precio: </p>
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Go</button>
+                      </div>
+        
+                    </div>
+                  </div>                
+        
+            </section>    
+            
+          </template>
+          
+          <template id="template-table-footer">
+            
+            <th colspan="2" scope="row" class="text-start">Total Productos</th>
+            <td>2</td>
+            <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          vaciar todo
+        </button>
+        
+      </td>
+      <td class="fw-bold">$5404</td>
+      
+          </template>
     
-
+          <template id="template-table-body">
+      
+      <th scope="row">ID</th>
+      <td>Computer</td>
+      <td>4</td>
+      <td>
+        <button type="button" class="btn btn-info btn-sm">+</button>
+        <button type="button" class="btn btn-danger btn-sm">-</button>
+      </td>
+      <td >14000</td>
+      
+          </template>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
